@@ -243,3 +243,33 @@ section p {
     gap: 1.2rem;
   }
 }
+
+#technologies {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#technologies h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-shadow: 0 0 8px var(--neon-blue);
+  margin-bottom: 1rem;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.tech-icons img {
+  width: 90px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.1);
+}
+
