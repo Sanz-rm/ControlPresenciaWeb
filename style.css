@@ -32,21 +32,21 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(
-    circle at center,
-    var(--neon-blue) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(circle at center,
+      var(--neon-blue) 0%,
+      transparent 70%);
   animation: bgPulse 8s ease-in-out infinite;
   z-index: -1;
   filter: blur(150px);
 }
 
 @keyframes bgPulse {
+
   0%,
   100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
@@ -65,10 +65,12 @@ header .logo {
 }
 
 @keyframes logoFloat {
+
   0%,
   100% {
     transform: translateZ(0) rotateY(0);
   }
+
   50% {
     transform: translateZ(30px) rotateY(15deg);
   }
@@ -186,7 +188,7 @@ section p {
   font-family: 'Titillium Web', sans-serif;
   color: #333;
   border-radius: 10px;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   background: white;
   margin: 10px;
   transition: 0.3s;
@@ -229,20 +231,7 @@ section p {
   fill: #333;
 }
 
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  body {
-    overflow-x: hidden !important;
-  }
-  .features {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 1.2rem;
-  }
-}
+
 
 #technologies {
   margin-bottom: 2rem;
@@ -253,7 +242,7 @@ section p {
   font-size: 1.8rem;
   color: #ffffff;
   text-shadow: 0 0 8px var(--neon-blue);
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .tech-icons {
@@ -264,8 +253,9 @@ section p {
 }
 
 .tech-icons img {
-  width: 90px;
-  height: auto;
+  width: 150px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
   transition: transform 0.3s;
 }
 
@@ -273,3 +263,28 @@ section p {
   transform: scale(1.1);
 }
 
+@media (max-width: 768px) {
+  .tech-icons {
+    gap: 0.1rem;
+  }
+  .tech-icons img{
+    width: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.2rem;
+  }
+}
