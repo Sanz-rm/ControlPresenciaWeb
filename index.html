@@ -3,169 +3,159 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ControlPresencia</title>
+    <meta
+      name="description"
+      content="ControlPresencia simplifica el registro horario, la gestión de descansos y los informes de tu equipo."
+    />
+    <title>ControlPresencia | Gestión de jornada laboral</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img
-        src="assets/ControlPresenciaOriginal.png"
-        alt="ControlPresencia"
-        class="logo"
-      />
-      <h1>ControlPresencia</h1>
-      <p>Gestión profesional de horas laborales, descansos e informes</p>
+    <a class="skip-link" href="#main-content">Ir al contenido principal</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="ControlPresencia, inicio">
+          <img src="assets/ControlPresenciaOriginal.png" alt="" width="44" height="44" />
+          <span>Control<span>Presencia</span></span>
+        </a>
+        <div class="nav-links">
+          <a href="#como-funciona">Cómo funciona</a>
+          <a href="#ventajas">Ventajas</a>
+          <a href="#demo">Demo</a>
+        </div>
+        <a class="nav-cta" href="#demo">Ver demostración <span aria-hidden="true">&rarr;</span></a>
+      </nav>
     </header>
 
-    <main>
-      <section id="about">
-        <h2>¿Cómo funciona?</h2>
-        <p>
-          ControlPresencia centraliza el registro de jornadas y descansos.
-          Facilita al administrador el control de tiempos, la generación de
-          informes y el seguimiento anual de horas trabajadas.
-        </p>
-      </section>
+    <main id="main-content">
+      <section class="hero" id="inicio">
+        <div class="hero-grid container">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Gestión de jornada, sin complicaciones</p>
+            <h1>El tiempo de tu equipo, <em>bajo control.</em></h1>
+            <p class="hero-lead">
+              Registra jornadas, descansos e incidencias desde un único lugar.
+              ControlPresencia convierte las horas de tu equipo en información clara y accionable.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#demo">Ver demo de la aplicación <span aria-hidden="true">&rarr;</span></a>
+              <a class="button button-ghost" href="#como-funciona">Descubrir cómo funciona</a>
+            </div>
+            <div class="trust-row" aria-label="Principales funcionalidades">
+              <span><b>&#10003;</b> Registro centralizado</span>
+              <span><b>&#10003;</b> Informes automáticos</span>
+              <span><b>&#10003;</b> Control anual</span>
+            </div>
+          </div>
 
-      <section id="advantages">
-        <h2>Ventajas</h2>
-        <div class="features">
-          <div class="feature-card">
-            <h3>Registro Centralizado</h3>
-            <p>
-              Todo el historial de fichajes e incidencias en un repositorio
-              único con filtros por fecha y usuario.
-            </p>
-          </div>
-          <div class="feature-card">
-            <h3>Informes Automáticos</h3>
-            <p>
-              PDFs diarios, mensuales y anuales al alcance de un clic,
-              agilizando la administración.
-            </p>
-          </div>
-          <div class="feature-card">
-            <h3>Control Anual</h3>
-            <p>
-              Seguimiento preciso de las horas restantes del año para una
-              planificación efectiva.
-            </p>
-          </div>
-          <div class="feature-card">
-            <h3>Gestión de Empleados</h3>
-            <p>
-              Alta, modificación y desactivación de usuarios, más recuperación
-              de contraseña vía email.
-            </p>
+          <div class="product-preview" aria-label="Vista previa de ControlPresencia basada en la aplicación">
+            <div class="preview-glow"></div>
+            <div class="app-screen">
+              <div class="app-header"><div class="app-identity"><img src="assets/ControlPresenciaOriginal.png" alt="" /><span>Control<span>Presencia</span></span></div><div class="app-header-date">Miércoles, 21 de mayo de 2025</div><div class="app-actions"><span>&#128276;</span><span class="web-avatar">LR</span></div></div>
+              <div class="app-workspace">
+                <aside class="app-sidebar" aria-hidden="true"><span class="sidebar-active">&#9638;</span><span>&#9719;</span><span>&#9783;</span><span>&#128202;</span></aside>
+                <div class="app-body">
+                <section class="clock-card">
+                  <p class="card-kicker">FICHAJE ACTUAL</p><h3>Registra tu jornada</h3>
+                  <div class="form-row"><label>Hora actual</label><span>17:07:47</span></div>
+                  <div class="form-row"><label>Usuario</label><span>Manuel</span></div>
+                  <div class="form-row"><label>Acción</label><span>Trabajo <b>&or;</b></span></div>
+                  <div class="punch-actions"><span>Inicio jornada</span><span>Final jornada</span></div>
+                  <div class="shift-status"><strong>Jornada en curso</strong><p>Inicio registrado a las 17:07:48</p><p><i></i> Trabajando actualmente</p></div>
+                </section>
+                <section class="records-card">
+                  <div class="records-title"><div><p class="card-kicker">REGISTRO HORARIO</p><strong>Control de presencia</strong></div><span>Descargar PDF</span></div>
+                  <div class="records-table"><div class="table-head"><span>Usuario</span><span>Fecha</span><span>Entrada</span><span>Salida</span><span>Total</span></div><div><span>CarlosG</span><span>19/05/2025</span><span>08:45</span><span>18:00</span><span>07:30</span></div><div><span>LuisG</span><span>06/05/2025</span><span>09:15</span><span>18:30</span><span>08:15</span></div><div><span>Paquito</span><span>03/05/2025</span><span>08:30</span><span>18:15</span><span>09:00</span></div><div><span>Silvi</span><span>02/05/2025</span><span>08:45</span><span>18:00</span><span>08:15</span></div></div>
+                </section>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="technologies">
-        <h2>Tecnologías empleadas</h2>
-        <div class="tech-icons">
-          <img src="assets/icono-vs2022.png" alt="Visual Studio 2022" title="Visual Studio 2022" />
-          <img src="assets/icono-.net.png" alt=".NET" title=".NET" />
-          <img src="assets/icono-c.png" alt="C#" title="C#" />
-          <img src="assets/icono-mysql.png" alt="MySQL" title="MySQL" />
+      <section class="intro section" id="como-funciona">
+        <div class="container intro-grid">
+          <div>
+            <p class="eyebrow"><span></span> Diseñado para el día a día</p>
+            <h2>Una forma más clara de gestionar la jornada laboral.</h2>
+          </div>
+          <p class="intro-text">ControlPresencia reúne el registro horario de toda la organización para que administración y equipo tengan siempre la misma información, actualizada y disponible.</p>
         </div>
       </section>
 
-      <section>
-        <h2 class="title-demo">Demo de la aplicación</h2>
-        <div class="video-container">
-          <iframe
-            src="https://www.youtube.com/embed/QCdtIJUc7JI?si=kwjURTV_Z-mwaD_k"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+      <section class="workflow section">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="eyebrow"><span></span> Proceso simple</p>
+            <h2>Todo lo que necesitas, en tres pasos.</h2>
+          </div>
+          <ol class="steps">
+            <li><span class="step-number">01</span><div class="step-icon">&#9719;</div><h3>Registra la jornada</h3><p>Entradas, salidas y descansos quedan anotados al instante.</p></li>
+            <li><span class="step-number">02</span><div class="step-icon">&#8977;</div><h3>Consulta y gestiona</h3><p>Filtra movimientos e incidencias por persona o periodo.</p></li>
+            <li><span class="step-number">03</span><div class="step-icon">&#9636;</div><h3>Genera informes</h3><p>Obtén informes diarios, mensuales y anuales con un clic.</p></li>
+          </ol>
         </div>
       </section>
-      
+
+      <section class="benefits section" id="ventajas">
+        <div class="container">
+          <div class="section-heading benefits-heading">
+            <div><p class="eyebrow"><span></span> Visión completa</p><h2>Menos tareas manuales.<br />Más control.</h2></div>
+            <p>Herramientas pensadas para simplificar la gestión de personas sin perder detalle.</p>
+          </div>
+          <div class="features">
+            <article class="feature-card"><div class="feature-icon">&#9638;</div><h3>Registro centralizado</h3><p>Todo el historial de fichajes e incidencias, ordenado en un único repositorio.</p><span class="feature-index">01</span></article>
+            <article class="feature-card"><div class="feature-icon">&nearr;</div><h3>Informes automáticos</h3><p>Genera PDFs diarios, mensuales y anuales para agilizar la administración.</p><span class="feature-index">02</span></article>
+            <article class="feature-card"><div class="feature-icon">&#9673;</div><h3>Control anual</h3><p>Consulta horas trabajadas y pendientes para planificar con precisión.</p><span class="feature-index">03</span></article>
+            <article class="feature-card"><div class="feature-icon">&#9817;</div><h3>Gestión de empleados</h3><p>Da de alta, actualiza y desactiva usuarios de forma sencilla y segura.</p><span class="feature-index">04</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo section" id="demo">
+        <div class="container demo-layout">
+          <div class="demo-copy">
+            <p class="eyebrow"><span></span> Conoce la plataforma</p>
+            <h2>Ve ControlPresencia en acción.</h2>
+            <p>Explora el flujo de trabajo de la aplicación y descubre cómo centraliza el seguimiento horario de tu organización.</p>
+            <div class="demo-note"><span>&#10003;</span><p>Una interfaz clara para empleados y administradores.</p></div>
+          </div>
+          <div class="video-shell">
+            <iframe src="https://www.youtube.com/embed/QCdtIJUc7JI?si=kwjURTV_Z-mwaD_k" title="Demostración de ControlPresencia" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="technology section">
+        <div class="container tech-content">
+          <p>Construido con tecnologías fiables</p>
+          <div class="tech-icons">
+            <img src="assets/icono-vs2022.png" alt="Visual Studio 2022" loading="lazy" />
+            <img src="assets/icono-.net.png" alt=".NET" loading="lazy" />
+            <img src="assets/icono-c.png" alt="C#" loading="lazy" />
+            <img src="assets/icono-mysql.png" alt="MySQL" loading="lazy" />
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <div class="social-links">
-        <a
-          href="https://www.linkedin.com/in/manuel-sanz-romero-6a8797320/"
-          target="_blank"
-          rel="noopener"
-          class="social-btn flex-center"
-          id="linkedin"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            height="24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 
-          2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 
-          0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 
-          6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
-            ></path>
-          </svg>
-          <span>Manuel Sanz Romero</span>
-        </a>
-        <a
-          href="https://github.com/Sanz-rm"
-          target="_blank"
-          rel="noopener"
-          class="social-btn flex-center"
-          id="github"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            height="24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 
-          3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 
-          1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 
-          1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 
-          0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 
-          0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 
-          3.003-.404 1.02.005 2.047.138 3.006.404 
-          2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 
-          2.874.118 3.176.77.84 1.235 1.911 1.235 
-          3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 
-          1.102.823 2.222v3.293c0 .319.192.694.801.576 
-          4.765-1.589 8.199-6.086 8.199-11.386 
-          0-6.627-5.373-12-12-12z"
-            ></path>
-          </svg>
-          <span>Sanz-rm</span>
-        </a>
-        <a
-          href="mailto:sanzromerom@gmail.com"
-          target="_blank"
-          rel="noopener"
-          class="social-btn flex-center"
-          id="email"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            height="24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 
-          2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 
-          2v.01L12 13l8-6.99V6H4zm0 12h16V9l-8 
-          7-8-7v7z"
-            ></path>
-          </svg>
-          <span>sanzromerom@gmail.com</span>
-        </a>
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <a class="brand footer-brand" href="#inicio"><img src="assets/ControlPresenciaOriginal.png" alt="" width="36" height="36" /><span>Control<span>Presencia</span></span></a>
+        <p>Gestión inteligente del tiempo de tu equipo.</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/manuel-sanz-romero-6a8797320/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Sanz-rm" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:sanzromerom@gmail.com">Contacto</a>
+        </div>
       </div>
     </footer>
   </body>
